@@ -5,22 +5,22 @@ En la segunta sección del curso, nos dan una introducción breve sobre los tipo
 Existen 2 categorías de tipos de datos en Java:
 
 ## 1. Datos primitivos (primitive data types)
-   -`boolean`: Representa un valor lógico, verdadero (`true`) o falso (`false`). Ideal para condiciones y banderas lógicas.
-   -`byte`: Entero de 8 bits. Rango: -128 a 127. Útil cuando se desea ahorrar memoria.
-   -`short`: Entero de 16 bits. Rango: -32,768 a 32,767.
-   -`int`: Entero de 32 bits. Es el tipo entero más común.
-   -`long`: Entero de 64 bits. Se usa para valores numéricos muy grandes.
-   -`float`: Número decimal de 32 bits. Menor precisión que double. Se declara con una f al final (ej: 3.14f).
-   -`double`: Número decimal de 64 bits. Mayor precisión para representar valores decimales.
-   -`char`: Representa un único carácter Unicode, entre comillas simples (ej: 'A').
+- `boolean`: Representa un valor lógico, verdadero (`true`) o falso (`false`). Ideal para condiciones y banderas lógicas.
+- `byte`: Entero de 8 bits. Rango: -128 a 127. Útil cuando se desea ahorrar memoria.
+- `short`: Entero de 16 bits. Rango: -32,768 a 32,767.
+- `int`: Entero de 32 bits. Es el tipo entero más común.
+- `long`: Entero de 64 bits. Se usa para valores numéricos muy grandes.
+- `float`: Número decimal de 32 bits. Menor precisión que double. Se declara con una f al final (ej: 3.14f).
+- `double`: Número decimal de 64 bits. Mayor precisión para representar valores decimales.
+- `char`: Representa un único carácter Unicode, entre comillas simples (ej: 'A').
 
 ## 2. Datos de referencia (reference data types)
 Los datos de referencia almacenan direcciones de memoria en lugar de los valores directamente. Se usan para representar objetos, arreglos, clases y más.
 Algunos ejemplos:
--`String`: Para representar cadenas de texto.
--Arreglos (arrays): `int[]`, `String[]`, etc.
--Clases definidas por el usuario.
--Objetos de bibliotecas estándar como `Scanner`, `Random`, `ArrayList`, etc.
+- `String`: Para representar cadenas de texto.
+- Arreglos (arrays): `int[]`, `String[]`, etc.
+- Clases definidas por el usuario.
+- Objetos de bibliotecas estándar como `Scanner`, `Random`, `ArrayList`, etc.
 
 ## Wrapper Classes
 
