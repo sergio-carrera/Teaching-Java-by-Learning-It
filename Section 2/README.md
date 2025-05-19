@@ -41,9 +41,9 @@ Cada tipo primitivo tiene su correspondiente wrapper class:
 
 Los wrapper classes permiten:
 
--Tratar los valores primitivos como objetos.
--Usar métodos útiles (como `parseInt`, `toString`, `compareTo`, etc.).
--Utilizarlos en estructuras como ArrayList, HashMap, y otros contenedores de objetos.
+- Tratar los valores primitivos como objetos.
+- Usar métodos útiles (como `parseInt`, `toString`, `compareTo`, etc.).
+- Utilizarlos en estructuras como ArrayList, HashMap, y otros contenedores de objetos.
 
 ### Tabla de tipos de datos en Java:
 
@@ -60,10 +60,10 @@ Los wrapper classes permiten:
 
 ### Métodos útiles en Wrapper Classes:
 
-`Integer.parseInt("123")` → Convierte texto a entero.
-`Double.toString(3.14)` → Convierte número a string.
-`Character.isDigit('5')` → Verifica si el carácter es un dígito.
-`Boolean.parseBoolean("true")` → Convierte texto a booleano.
+- `Integer.parseInt("123")` → Convierte texto a entero.
+- `Double.toString(3.14)` → Convierte número a string.
+- `Character.isDigit('5')` → Verifica si el carácter es un dígito.
+- `Boolean.parseBoolean("true")` → Convierte texto a booleano.
 
 ---
 
