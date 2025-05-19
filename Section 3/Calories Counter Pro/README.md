@@ -40,7 +40,7 @@ int dayOfWeekNum;
 return "Food Name: " + foodName + "\n" + "Calories: " + calories + "\n" + "Week: " + weekNum + "\n" + "Day of Week: " + dayOfWeekNum + "\n";
 ```
 
-### 🪜 Estructura del lista
+### 🪜 Estructura de la lista
 Cada Nodo contiene:
 - Un objeto Food llamado dato.
 - Un puntero siguiente.
@@ -53,5 +53,47 @@ public boolean estaVacia() {
     return inicio == null;
 }
 ```
-- 
+- `void insertarOrdenadamente(Food dato)`: Inserta el nuevo alimento en orden, según semana y día.
+```java
+public void insertarOrdenadamente(Food dato) {
+    Nodo actual = new Nodo(dato);
+
+    if (estaVacia()) {
+        inicio = fin = actual;
+        return;
+    }
+
+    if (comparar(dato, inicio.dato) < 0) {
+        actual.siguiente = inicio;
+        inicio = actual;
+        return;
+    }
+
+    Nodo temporal = inicio;
+    while (temporal.siguiente != null && comparar(dato, temporal.siguiente.dato) >= 0) {
+        temporal = temporal.siguiente;
+    }
+
+    actual.siguiente = temporal.siguiente;
+    temporal.siguiente = actual;
+
+    if (actual.siguiente == null) {
+        fin = actual;
+    }
+}
+```
+Este método inserta el nuevo nodo en el lugar correcto para mantener el orden por semana y día. Si va al inicio o al final, actualiza los punteros inicio o fin.
+Utilizo el método `comparar(Food a, Food b)` para obtener la ubicación correcta para insertar el nuevo nodo de manera ordenada.
+
+- `int comparar(Food a, Food b)`: Compara dos objetos Food para definir su orden.
+```java
+private int comparar(Food a, Food b) {
+    if (a.weekNum != b.weekNum) {
+        return a.weekNum - b.weekNum;
+    } else {
+        return a.dayOfWeekNum - b.dayOfWeekNum;
+    }
+}
+```
+Primero compara por semana. Si es igual, compara por día.
 
