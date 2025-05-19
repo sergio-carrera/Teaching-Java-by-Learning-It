@@ -37,7 +37,8 @@ int dayOfWeekNum;
 ```
 - Con un método sobrescrito toString() para mostrar los datos con mi propio formato (y que sea más sencillo la impresión de los mismos):
 ```java
-return "Food Name: " + foodName + "\n" + "Calories: " + calories + "\n" + "Week: " + weekNum + "\n" + "Day of Week: " + dayOfWeekNum + "\n";
+return "Food Name: " + foodName + "\n" + "Calories: " + calories + "\n" + "Week: " +
+        weekNum + "\n" + "Day of Week: " + dayOfWeekNum + "\n";
 ```
 
 ### 🪜 Estructura de la lista
