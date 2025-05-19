@@ -53,6 +53,8 @@ public boolean estaVacia() {
     return inicio == null;
 }
 ```
+Verifica si el nodo inicio está en null. Si es así, no hay elementos.
+
 - `void insertarOrdenadamente(Food dato)`: Inserta el nuevo alimento en orden, según semana y día.
 ```java
 public void insertarOrdenadamente(Food dato) {
@@ -97,3 +99,53 @@ private int comparar(Food a, Food b) {
 ```
 Primero compara por semana. Si es igual, compara por día.
 
+- `int comparar(Food a, Food b)`: Compara dos objetos Food para definir su orden.
+```java
+private int comparar(Food a, Food b) {
+    if (a.weekNum != b.weekNum) {
+        return a.weekNum - b.weekNum;
+    } else {
+        return a.dayOfWeekNum - b.dayOfWeekNum;
+    }
+}
+```
+Primero compara por semana. Si es igual, compara por día.
+
+- `void mostrar()`: Muestra todos los alimentos registrados.
+```java
+public void mostrar() {
+    if (estaVacia()) {
+        System.out.println("Todavía no se han ingresado valores");
+    } else {
+        Nodo temporal = inicio;
+        while (temporal != null) {
+            System.out.println(temporal.dato.toString());
+            temporal = temporal.siguiente;
+        }
+    }
+}
+```
+Recorre la lista enlazada e imprime cada Food usando su método toString() que con anterioridad cambiamos con @Override.
+
+- `void suma()`: Suma el total de calorías registradas.
+```java
+public void suma() {
+    if (estaVacia()) {
+        System.out.println("No hay comidas registradas para realizar la suma total de calorías");
+    } else {
+        double suma = 0;
+        Nodo temporal = inicio;
+        while (temporal != null) {
+            suma += temporal.dato.calories;
+            temporal = temporal.siguiente;
+        }
+        System.out.println("La suma total de calorías es: " + suma);
+    }
+}
+```
+ Recorre la lista sumando el atributo calories de cada objeto Food e imprime el valor de la variable de la suma total de dichas calorias.
+
+---
+
+A manera de resumen, esta versión personalizada del ejercicio Calories Counter Pro, combina estructuras de datos (listas enlazadas), manipulación de clases personalizadas (Food) y lógica de ordenamiento para llevar un control detallado y ordenado de la ingesta calórica por día y semana.
+Me pareció una buena idea practicar la lógica de las listas enlazadas. Tanto así, que preparé otros ejercicios con listas enlazadas en secciones posteriores (●'◡'●).
