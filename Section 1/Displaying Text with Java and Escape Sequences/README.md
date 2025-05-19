@@ -26,11 +26,12 @@ El programa debe:
 ## 📌 Modificación del ejercicio:
 Añado a la mesa ciertas complejidades, tales como:
 
-1. Imprimir el siguiente arte ASCII usando `print` y secuencias de escape.
-2. Aprovechar la pregunta de la imagen para capturar la respuesta del usuario.
-3. Guardar la respuesta usando `Scanner`.
-4. Imprimir la respuesta usando `println` y `print`.
-5. Revertir el arte ASCII con un efecto espejo.
+1. Imprimir la siguiente imagen en arte ASCII usando `print` y secuencias de escape.
+   ![imagen] (Section 1/Displaying Text with Java and Escape Sequences/imgs/section1_img1.jpg)
+3. Aprovechar la pregunta de la imagen para capturar la respuesta del usuario.
+4. Guardar la respuesta usando `Scanner`.
+5. Imprimir la respuesta usando `println` y `print`.
+6. Revertir el arte ASCII con un efecto espejo.
 
 Consideraciones del nuevo reto:
 
