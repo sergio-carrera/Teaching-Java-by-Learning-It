@@ -1,6 +1,6 @@
 # Calories Counter Pro
 
-En este ejercicio se conmstruye un programa llamado Calorie Counter Pro en Java modificado con base a mis intereses. 
+En este ejercicio se construye un programa llamado Calories Counter Pro en Java modificado con base a mis intereses y lo que solicita originalmente la tercera sección del curso 60 Days of Java : The Complete Java Masterclass. 
 El programa permite al usuario ingresar alimentos junto a su valor calórico, calcular la ingesta total y mostrar un resumen de los alimentos usando una lista enlazada como estructura de datos de cada resgistro.
 
 ---
@@ -35,7 +35,7 @@ double calories;
 int weekNum;
 int dayOfWeekNum;
 ```
-- Con un método sobrescrito toString() para mostrar los datos:
+- Con un método sobrescrito toString() para mostrar los datos con mi propio formato (y que sea más sencillo la impresión de los mismos):
 ```java
 return "Food Name: " + foodName + "\n" + "Calories: " + calories + "\n" + "Week: " + weekNum + "\n" + "Day of Week: " + dayOfWeekNum + "\n";
 ```
