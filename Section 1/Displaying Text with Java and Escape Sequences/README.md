@@ -27,7 +27,7 @@ El programa debe:
 Añado a la mesa ciertas complejidades, tales como:
 
 1. Imprimir la siguiente imagen en arte ASCII usando `print` y secuencias de escape.
-   ![imagen](Section%201/Displaying%20Text%20with%20Java%20and%20Escape%20Sequences/imgs/section1_img1.jpg)
+   ![Image](https://github.com/user-attachments/assets/e6be35a9-8864-4753-836a-b3ce884d34c2)
 3. Aprovechar la pregunta de la imagen para capturar la respuesta del usuario.
 4. Guardar la respuesta usando `Scanner`.
 5. Imprimir la respuesta usando `println` y `print`.
