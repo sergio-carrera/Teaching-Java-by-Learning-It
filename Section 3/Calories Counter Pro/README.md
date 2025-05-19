@@ -7,7 +7,7 @@ El programa permite al usuario ingresar alimentos junto a su valor calórico, ca
 
 ## 📌 Instrucciones originales del ejercicio
 
-- Crea un programa en Java que:
+Crea un programa en Java que:
 - Solicite al usuario el nombre de tres alimentos.
 - Pida las calorías correspondientes a cada uno.
 - Calcule la suma total de calorías.
