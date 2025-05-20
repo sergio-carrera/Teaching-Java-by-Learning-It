@@ -24,12 +24,12 @@ Escribe un programa en Java que:
   - Mostrar el historial completo de cálculos
 - Se implementó una **lista enlazada simple** que almacena nodos cuyo dato es un **`CustomStack<Double>`**, una pila extendida con método `toString()` personalizado.
 - Cada cálculo se registra en el `CustomStack` con la siguiente estructura:
-  1. Año
-  2. Mes
-  3. Monto
-  4. Tasa de interés
-  5. Tiempo (años)
-  6. Interés simple calculado
+  - Año
+  - Mes
+  - Monto
+  - Tasa de interés
+  - Tiempo (años)
+  - Interés simple calculado
 
 ---
 
