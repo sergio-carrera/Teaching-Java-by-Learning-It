@@ -38,7 +38,11 @@ public class Main {
                     dataBase.calculate(year, month, income, rent, groceries, transportation, entertainment);
                     break;
                 case 2:
-
+                    System.out.print("Enter the year of the entry you want to update: ");
+                    int yearToUpdate = sc.nextInt();
+                    System.out.print("Enter the month of the entry you want to update: ");
+                    int monthToUpdate = sc.nextInt();
+                    dataBase.updateMenu(yearToUpdate, monthToUpdate);
                     break;
                 case 3:
 
@@ -56,9 +60,9 @@ public class Main {
                         System.out.println("1. Normal");
                         System.out.println("2. Inverted");
                         System.out.println("3. Return to the main menu");
-                        System.out.print("Enter the option:");
+                        System.out.print("Enter the option: ");
                         opc1 = sc.nextInt();
-                        dataBase.mostrar(opc1);
+                        dataBase.printAll(opc1);
                     } while (opc1 != 3);
                     break;
                 case 7:
@@ -68,7 +72,6 @@ public class Main {
                     System.out.println("Please enter a valid option");
                     break;
             }
-
         } while (opc != 7);
     }
 }
