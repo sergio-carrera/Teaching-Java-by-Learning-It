@@ -1,12 +1,12 @@
 import java.util.*;
 
 public class BudgetTracker {
-    private Scanner sc = new Scanner(System.in);
-    private Map<Integer, Integer> yearToIndexMap = new HashMap<>();
-    private Map<Integer, Integer> monthToIndexMap = new HashMap<>();
+    final Scanner sc = new Scanner(System.in);
+    final Map<Integer, Integer> yearToIndexMap = new HashMap<>();
+    final Map<Integer, Integer> monthToIndexMap = new HashMap<>();
     private MonthlyCalculation[][] dataBase;
-    private Set<Integer> validYears = Set.of(2020, 2021, 2022, 2023, 2024);
-    private Set<Integer> validMonths = Set.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+    final Set<Integer> validYears = Set.of(2020, 2021, 2022, 2023, 2024);
+    final Set<Integer> validMonths = Set.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
 
     /*
     Me gustaría tomar en cuenta solo 5 años (2020 - 2024):
