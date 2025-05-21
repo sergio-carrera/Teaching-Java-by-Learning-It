@@ -388,34 +388,6 @@ public class BudgetTracker {
                 transportationPercentage, entertainmentPercentage};
     }
 
-    public void printAll(int opc) {
-        try {
-            if (opc == 1) {
-                for (int i = 0; i < 5; i++) {
-                    for (int j = 0; j < 12; j++) {
-                        if (dataBase[i][j] != null) {
-                            System.out.println(dataBase[i][j].toString());
-                        } else {
-                            System.out.println("There is no entry in here\n----------------------------");
-                        }
-                    }
-                }
-            } else if (opc == 2) {
-                for (int i = 4; i >= 0; i--) {
-                    for (int j = 11; j >= 0; j--) {
-                        if (dataBase[i][j] != null) {
-                            System.out.println(dataBase[i][j].toString());
-                        } else {
-                            System.out.println("There is no entry in here\n----------------------------");
-                        }
-                    }
-                }
-            }
-        } catch (Exception e) {
-            System.out.println("Error in the 'printAll' method: " + e);
-        }
-    }
-
     public void printByYear(int year, int opc) {
         try {
             StringBuilder errors = new StringBuilder();
@@ -516,6 +488,34 @@ public class BudgetTracker {
             }
         } catch (Exception e) {
             System.out.println("Error in 'printByYearAndMonth' method: " + e);
+        }
+    }
+
+    public void printAll(int opc) {
+        try {
+            if (opc == 1) {
+                for (int i = 0; i < 5; i++) {
+                    for (int j = 0; j < 12; j++) {
+                        if (dataBase[i][j] != null) {
+                            System.out.println(dataBase[i][j].toString());
+                        } else {
+                            System.out.println("There is no entry in here\n----------------------------");
+                        }
+                    }
+                }
+            } else if (opc == 2) {
+                for (int i = 4; i >= 0; i--) {
+                    for (int j = 11; j >= 0; j--) {
+                        if (dataBase[i][j] != null) {
+                            System.out.println(dataBase[i][j].toString());
+                        } else {
+                            System.out.println("There is no entry in here\n----------------------------");
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Error in the 'printAll' method: " + e);
         }
     }
 }
