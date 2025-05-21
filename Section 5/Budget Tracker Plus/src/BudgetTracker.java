@@ -132,33 +132,29 @@ public class BudgetTracker {
         return !Double.isNaN(value) && !Double.isInfinite(value);
     }
 
-    /*
-    Próximamente, me gustaría mejorar el metodo de mostrar para que el usuario
-    pueda escoger la preferencia de la impresión de la matriz (base de datos)
-    -Si lo quiere mostrar en orden normal (primera entrada que se imprime es la primera de la base de datos (Año: 2020 | Mes: 1))
-    -Si lo quiere mostrar en orden inverso (primera entrada que se imprime es la última de la base de datos (Año: 2024 | Mes: 12))
-    */
-    public void mostrar() {
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 12; j++) {
-                if (dataBase[i][j] != null) {
-                    System.out.println(dataBase[i][j].toString());
-                } else {
-                    System.out.println("There is no entry in here\n----------------------------");
+    public void mostrar(int opc) {
+        try {
+            if (opc == 1) {
+                for (int j = 0; j < 12; j++) {
+                    if (dataBase[i][j] != null) {
+                        System.out.println(dataBase[i][j].toString());
+                    } else {
+                        System.out.println("There is no entry in here\n----------------------------");
+                    }
+                }
+            } else if (opc == 2) {
+                for (int i = 4; i >= 0; i--) {
+                    for (int j = 11; j >= 0; j--) {
+                        if (dataBase[i][j] != null) {
+                            System.out.println(dataBase[i][j].toString());
+                        } else {
+                            System.out.println("There is no entry in here\n----------------------------");
+                        }
+                    }
                 }
             }
-        }
-    }
-
-    public void mostrar1() {
-        for (int i = 4; i >= 0; i--) {
-            for (int j = 11; j >= 0; j--) {
-                if (dataBase[i][j] != null) {
-                    System.out.println(dataBase[i][j].toString());
-                } else {
-                    System.out.println("There is no entry in here\n----------------------------");
-                }
-            }
+        } catch (Exception e) {
+            System.out.println("Error el metodo de 'mostrar': " + e);
         }
     }
 }

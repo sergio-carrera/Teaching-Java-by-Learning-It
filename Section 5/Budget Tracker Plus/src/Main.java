@@ -8,7 +8,6 @@ public class Main {
         BudgetTracker dataBase = new BudgetTracker();
 
         do {
-
             System.out.println("Bienvenido al Budget Tracker Plus");
             System.out.println("1. Add a new entry");
             System.out.println("2. Update an existing entry");
@@ -51,7 +50,16 @@ public class Main {
 
                     break;
                 case 6:
-                    dataBase.mostrar();
+                    int opc1 = 0;
+                    do {
+                        System.out.println("In which format would you like to print all entries?");
+                        System.out.println("1. Normal");
+                        System.out.println("2. Inverted");
+                        System.out.println("3. Return to the main menu");
+                        System.out.print("Enter the option:");
+                        opc1 = sc.nextInt();
+                        dataBase.mostrar(opc1);
+                    } while (opc1 != 3);
                     break;
                 case 7:
                     System.out.println("Closing the program...");
