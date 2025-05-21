@@ -1,5 +1,3 @@
-import java.util.Stack;
-
 public class Lista {
     public Nodo inicio;
     public Nodo fin;
@@ -123,7 +121,6 @@ public class Lista {
             System.out.println("Error en el método 'eliminar': " + e.toString());
         }
     }
-
 
     public void consultar(double anno, double mes) {
         try {
