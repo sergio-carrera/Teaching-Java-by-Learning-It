@@ -135,11 +135,13 @@ public class BudgetTracker {
     public void mostrar(int opc) {
         try {
             if (opc == 1) {
-                for (int j = 0; j < 12; j++) {
-                    if (dataBase[i][j] != null) {
-                        System.out.println(dataBase[i][j].toString());
-                    } else {
-                        System.out.println("There is no entry in here\n----------------------------");
+                for (int i = 0; i < 5; i++) {
+                    for (int j = 0; j < 12; j++) {
+                        if (dataBase[i][j] != null) {
+                            System.out.println(dataBase[i][j].toString());
+                        } else {
+                            System.out.println("There is no entry in here\n----------------------------");
+                        }
                     }
                 }
             } else if (opc == 2) {
