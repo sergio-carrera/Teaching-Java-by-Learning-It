@@ -71,7 +71,7 @@ public class BudgetTracker {
                         case 1:
                             dataBase[yearToIndexMap.get(registro.getYear())][monthToIndexMap.get(registro.getMonth())] = registro;
                             System.out.println("The record has been replaced with the following information: ");
-                            System.out.println(registro.toString());
+                            System.out.println(registro);
                             break;
                         case 2:
                             System.out.println("The record hasn't been replaced");
