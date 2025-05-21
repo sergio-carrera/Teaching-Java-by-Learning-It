@@ -44,25 +44,70 @@ public class Main {
                     dataBase.updateMenu(yearToUpdate, monthToUpdate);
                     break;
                 case 3:
-
+                    int yearPrintByYear = 0;
+                    int opcPrintByYear = 0;
+                    do {
+                        System.out.println("In which format would you like to print entries by year?");
+                        System.out.println("1. Normal");
+                        System.out.println("2. Inverted");
+                        System.out.println("3. Return to the main menu");
+                        System.out.print("Enter the option: ");
+                        opcPrintByYear = sc.nextInt();
+                        if (opcPrintByYear != 3) {
+                            System.out.print("Enter the year of the entries you want to print: ");
+                            yearPrintByYear = sc.nextInt();
+                            dataBase.printByYear(yearPrintByYear, opcPrintByYear);
+                        }
+                    } while (opcPrintByYear != 3);
                     break;
                 case 4:
-
+                    int monthPrintByMonth = 0;
+                    int opcPrintByMonth = 0;
+                    do {
+                        System.out.println("In which format would you like to print entries by month?");
+                        System.out.println("1. Normal");
+                        System.out.println("2. Inverted");
+                        System.out.println("3. Return to the main menu");
+                        System.out.print("Enter the option: ");
+                        opcPrintByMonth = sc.nextInt();
+                        if (opcPrintByMonth != 3) {
+                            System.out.print("Enter the month of the entries you want to print: ");
+                            monthPrintByMonth = sc.nextInt();
+                            dataBase.printByMonth(monthPrintByMonth, opcPrintByMonth);
+                        }
+                    } while (opcPrintByMonth != 3);
                     break;
                 case 5:
-
+                    int yearPrintByYearAndMonth = 0;
+                    int monthPrintByYearAndMonth = 0;
+                    int opcPrintByYearAndMonth = 0;
+                    do {
+                        System.out.println("In which format would you like to print entries by year and month?");
+                        System.out.println("1. Normal");
+                        System.out.println("2. Inverted");
+                        System.out.println("3. Return to the main menu");
+                        System.out.print("Enter the option: ");
+                        opcPrintByYearAndMonth = sc.nextInt();
+                        if (opcPrintByYearAndMonth != 3) {
+                            System.out.print("Enter the year of the entries: ");
+                            yearPrintByYearAndMonth = sc.nextInt();
+                            System.out.print("Enter the month of the entries: ");
+                            monthPrintByYearAndMonth = sc.nextInt();
+                            dataBase.printByYearAndMonth(yearPrintByYearAndMonth, monthPrintByYearAndMonth, opcPrintByYearAndMonth);
+                        }
+                    } while (opcPrintByYearAndMonth != 3);
                     break;
                 case 6:
-                    int opc1 = 0;
+                    int opcPrintAll = 0;
                     do {
                         System.out.println("In which format would you like to print all entries?");
                         System.out.println("1. Normal");
                         System.out.println("2. Inverted");
                         System.out.println("3. Return to the main menu");
                         System.out.print("Enter the option: ");
-                        opc1 = sc.nextInt();
-                        dataBase.printAll(opc1);
-                    } while (opc1 != 3);
+                        opcPrintAll = sc.nextInt();
+                        dataBase.printAll(opcPrintAll);
+                    } while (opcPrintAll != 3);
                     break;
                 case 7:
                     System.out.println("Closing the program...");
