@@ -14,30 +14,30 @@ public class GalaxyWeatherAdvisor {
     private void inicializarPlanetasPredeterminados() {
         //Tierra
         Planet tierra = new Planet("Tierra");
-        tierra.addTemperatureAdvice(-10, new String[]{"Abrigo pesado, guantes, gorro.", "Riesgo de hipotermia extrema. Evitar exposición prolongada."});
-        tierra.addTemperatureAdvice(0, new String[]{"Abrigo, bufanda, gorro.", "Cuidado con el hielo. Posible congelación leve."});
-        tierra.addTemperatureAdvice(10, new String[]{"Chaqueta ligera, suéter.", "Clima fresco. Disfruta de actividades al aire libre."});
-        tierra.addTemperatureAdvice(20, new String[]{"Ropa ligera, camiseta.", "Clima templado. Ideal para salir."});
-        tierra.addTemperatureAdvice(30, new String[]{"Ropa muy ligera, protector solar, sombrero.", "Alto calor. Mantente hidratado y busca sombra."});
+        tierra.agregarAvisoBasadoEnTemperatura(-10, new String[]{"Abrigo pesado, guantes, gorro.", "Riesgo de hipotermia extrema. Evitar exposición prolongada."});
+        tierra.agregarAvisoBasadoEnTemperatura(0, new String[]{"Abrigo, bufanda, gorro.", "Cuidado con el hielo. Posible congelación leve."});
+        tierra.agregarAvisoBasadoEnTemperatura(10, new String[]{"Chaqueta ligera, suéter.", "Clima fresco. Disfruta de actividades al aire libre."});
+        tierra.agregarAvisoBasadoEnTemperatura(20, new String[]{"Ropa ligera, camiseta.", "Clima templado. Ideal para salir."});
+        tierra.agregarAvisoBasadoEnTemperatura(30, new String[]{"Ropa muy ligera, protector solar, sombrero.", "Alto calor. Mantente hidratado y busca sombra."});
         planetas.put(tierra.getName().toLowerCase(), tierra);
 
         //Marte
         Planet marte = new Planet("Marte");
-        marte.addTemperatureAdvice(-100, new String[]{"Traje espacial con calefacción avanzada, sistema de soporte vital.", "Temperaturas extremadamente bajas. Despresurización fatal."});
-        marte.addTemperatureAdvice(-50, new String[]{"Traje espacial con sistema de calefacción.", "Frío intenso. Posible daño en equipos sin protección térmica."});
-        marte.addTemperatureAdvice(0, new String[]{"Traje espacial avanzado.", "Temperaturas bajo cero. La atmósfera es muy delgada."});
-        marte.addTemperatureAdvice(10, new String[]{"Traje espacial con refrigeración.", "Posible derretimiento de hielo superficial en ecuador durante verano."});
+        marte.agregarAvisoBasadoEnTemperatura(-100, new String[]{"Traje espacial con calefacción avanzada, sistema de soporte vital.", "Temperaturas extremadamente bajas. Despresurización fatal."});
+        marte.agregarAvisoBasadoEnTemperatura(-50, new String[]{"Traje espacial con sistema de calefacción.", "Frío intenso. Posible daño en equipos sin protección térmica."});
+        marte.agregarAvisoBasadoEnTemperatura(0, new String[]{"Traje espacial avanzado.", "Temperaturas bajo cero. La atmósfera es muy delgada."});
+        marte.agregarAvisoBasadoEnTemperatura(10, new String[]{"Traje espacial con refrigeración.", "Posible derretimiento de hielo superficial en ecuador durante verano."});
         planetas.put(marte.getName().toLowerCase(), marte);
 
         //Venus
         Planet venus = new Planet("Venus");
-        venus.addTemperatureAdvice(400, new String[]{"Traje de protección térmica extremo, escudo de ácido.", "Condiciones infernales. Lluvia de ácido sulfúrico. Evitar a toda costa."});
-        venus.addTemperatureAdvice(450, new String[]{"Traje de exploración atmosférica de alta resistencia.", "Presión atmosférica aplastante y calor extremo. Imposible sobrevivir sin equipo especializado."});
+        venus.agregarAvisoBasadoEnTemperatura(400, new String[]{"Traje de protección térmica extremo, escudo de ácido.", "Condiciones infernales. Lluvia de ácido sulfúrico. Evitar a toda costa."});
+        venus.agregarAvisoBasadoEnTemperatura(450, new String[]{"Traje de exploración atmosférica de alta resistencia.", "Presión atmosférica aplastante y calor extremo. Imposible sobrevivir sin equipo especializado."});
         planetas.put(venus.getName().toLowerCase(), venus);
 
         //Júpiter
         Planet jupiter = new Planet("Júpiter");
-        jupiter.addTemperatureAdvice(-150, new String[]{"Nave espacial ultra-resistente al calor y la presión.", "Gases hirvientes, tormentas colosales. Solo observación desde órbita segura."});
+        jupiter.agregarAvisoBasadoEnTemperatura(-150, new String[]{"Nave espacial ultra-resistente al calor y la presión.", "Gases hirvientes, tormentas colosales. Solo observación desde órbita segura."});
         planetas.put(jupiter.getName().toLowerCase(), jupiter);
     }
 
@@ -60,7 +60,7 @@ public class GalaxyWeatherAdvisor {
         double temperature = scanner.nextDouble();
         scanner.nextLine();
 
-        String[] advice = planet.getAdviceForTemperature(temperature);
+        String[] advice = planet.obtenerAvisoBasadoEnTemperatura(temperature);
         System.out.println("\n--- Asesoramiento Climático para " + planet.getName() + " a " + temperature + "°C ---");
         System.out.println("Vestimenta: " + advice[0]);
         System.out.println("Precauciones: " + advice[1]);
@@ -93,7 +93,7 @@ public class GalaxyWeatherAdvisor {
                 String clothingAdvice = scanner.nextLine();
                 System.out.print("Ingrese las precauciones para " + threshold + "°C y superiores: ");
                 String precautions = scanner.nextLine();
-                newPlanet.addTemperatureAdvice(threshold, new String[]{clothingAdvice, precautions});
+                newPlanet.agregarAvisoBasadoEnTemperatura(threshold, new String[]{clothingAdvice, precautions});
             } catch (NumberFormatException e) {
                 System.out.println("Entrada inválida para la temperatura. Por favor, ingrese un número entero o 'fin'.");
             }
@@ -140,7 +140,7 @@ public class GalaxyWeatherAdvisor {
                 String newClothing = scanner.nextLine();
                 System.out.print("Ingrese las NUEVAS precauciones: ");
                 String newPrecautions = scanner.nextLine();
-                planetToUpdate.addTemperatureAdvice(threshold, new String[]{newClothing, newPrecautions});
+                planetToUpdate.agregarAvisoBasadoEnTemperatura(threshold, new String[]{newClothing, newPrecautions});
                 System.out.println("Consejo de temperatura actualizado/añadido para " + planetToUpdate.getName() + ".");
                 break;
             case 2:
@@ -152,7 +152,7 @@ public class GalaxyWeatherAdvisor {
                 }
                 int thresholdToRemove = scanner.nextInt();
                 scanner.nextLine();
-                if (planetToUpdate.removeTemperatureAdvice(thresholdToRemove)) {
+                if (planetToUpdate.removerAvisoBasadoEnTemperatura(thresholdToRemove)) {
                     System.out.println("Consejo de temperatura para " + thresholdToRemove + "°C eliminado de " + planetToUpdate.getName() + ".");
                 } else {
                     System.out.println("No se encontró consejo para " + thresholdToRemove + "°C en " + planetToUpdate.getName() + ".");
