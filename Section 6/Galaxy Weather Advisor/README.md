@@ -24,7 +24,7 @@ Esta edición transforma el concepto inicial en una aplicación completa de gest
 Un robusto menú principal basado en un bucle do-while guía al usuario a través de diversas funcionalidades, permitiéndole no solo consultar, sino también administrar activamente la información climática planetaria:
 
 - Consultar clima planetario: El corazón de la aplicación. El usuario ingresa un planeta (predefinido o añadido) y la temperatura. El sistema recupera y muestra el consejo de vestimenta y las precauciones pertinentes
-- Añadir nuevo planeta: Esta opción es fundamental para la extensibilidad. Permite al usuario definir un planeta completamente nuevo, incluyendo su nombre y configurando múltiples umbrales de temperatura con sus respectivos consejos. Por ejemplo, se puede añadir "Krypton" y especificar qué ropa llevar a $ -50^\circ C$ o a $ 20^\circ C$.
+- Añadir nuevo planeta: Esta opción es fundamental para la extensibilidad. Permite al usuario definir un planeta completamente nuevo, incluyendo su nombre y configurando múltiples umbrales de temperatura con sus respectivos consejos.
 - Actualizar información de planeta: Permite modificar los datos climáticos de un planeta ya existente. Esto incluye añadir nuevos umbrales de temperatura/consejos o modificar los ya presentes, así como eliminar umbrales específicos que ya no sean relevantes.
 - Eliminar planeta: Proporciona la capacidad de remover un planeta y toda su información asociada de la base de datos del programa.
 - Mostrar todos los planetas: Ofrece una visión general completa de todos los planetas actualmente registrados en el sistema, mostrando su nombre y todos los rangos de temperatura y consejos definidos para cada uno.
@@ -38,7 +38,7 @@ En lugar de una serie de condicionales if-else para cada planeta, se emplea una 
 - Flexibilidad: Facilita la adición y eliminación dinámica de planetas en tiempo de ejecución, sin necesidad de modificar el código fuente cada vez que se quiere añadir un nuevo cuerpo celeste.
 - Mapeo Consistente: La clave (String) se guarda en minúsculas y sin espacios (toLowerCase().trim()), asegurando que las búsquedas funcionen correctamente sin importar cómo el usuario escriba el nombre del planeta.
 
-### Clase Planet: El Corazón de la Abstracción
+### Clase Planet
 
 La introducción de la clase Planet es la piedra angular de esta versión avanzada. Encapsula toda la lógica y los datos relacionados con un planeta individual, adhiriéndose a los principios de Programación Orientada a Objetos:
 
