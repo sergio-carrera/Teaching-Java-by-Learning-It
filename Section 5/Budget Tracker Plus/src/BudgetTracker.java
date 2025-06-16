@@ -61,12 +61,12 @@ public class BudgetTracker {
         try {
             if (revisarPorEspacio(registro)) {
                 dataBase[yearToIndexMap.get(registro.getYear())][monthToIndexMap.get(registro.getMonth())] = registro;
-                System.out.println("The next information has been calculated and added correctly to the database!");
+                System.out.println("The next information has been calculated and added correctly into the database!");
                 System.out.println(registro);
             } else {
                 int opc = 0;
                 do {
-                    System.out.println("We have found an existing entry for this space in the data base.\n Would you like to replace it? \n1. Yes \n2. No");
+                    System.out.println("We have found an existing entry for this space in the database.\n Would you like to replace it? \n1. Yes \n2. No");
                     System.out.println("Enter your response: ");
                     opc = sc.nextInt();
                     switch (opc) {
@@ -101,7 +101,7 @@ public class BudgetTracker {
     private boolean revisarPorFormato(int year, int month, double income, double rent, double groceries, double transportation, double entertainment) {
         StringBuilder errors = new StringBuilder();
         if (!validYears.contains(year)) {
-            errors.append("The year has to be between 2020 and 2025\n");
+            errors.append("The year has to be between 2020 and 2024\n");
         }
         if (!validMonths.contains(month)) {
             errors.append("The month has to be between 1 and 12\n");
@@ -136,7 +136,7 @@ public class BudgetTracker {
         try {
             StringBuilder errors = new StringBuilder();
             if (!validYears.contains(year)) {
-                errors.append("The year has to be between 2020 and 2025\n");
+                errors.append("The year has to be between 2020 and 2024\n");
             }
             if (!validMonths.contains(month)) {
                 errors.append("The month has to be between 1 and 12\n");
@@ -392,7 +392,7 @@ public class BudgetTracker {
         try {
             StringBuilder errors = new StringBuilder();
             if (!validYears.contains(year)) {
-                errors.append("The year has to be between 2020 and 2025\n");
+                errors.append("The year has to be between 2020 and 2024\n");
             }
             if (!errors.isEmpty()) {
                 System.out.println("Format errors found:\n" + errors);
@@ -452,11 +452,11 @@ public class BudgetTracker {
         }
     }
 
-    public void printByYearAndMonth(int year, int month, int opc) {
+    public void printByYearAndMonth(int year, int month) {
         try {
             StringBuilder errors = new StringBuilder();
             if (!validYears.contains(year)) {
-                errors.append("The year has to be between 2020 and 2025\n");
+                errors.append("The year has to be between 2020 and 2024\n");
             }
             if (!validMonths.contains(month)) {
                 errors.append("The month has to be between 1 and 12\n");
@@ -465,27 +465,13 @@ public class BudgetTracker {
                 System.out.println("Format errors found:\n" + errors);
                 return;
             }
-            if (opc == 1) {
-                for (int i = 0; i < 5; i++) {
-                    for (int j = 0; j < 12; j++) {
-                        if (dataBase[yearToIndexMap.get(year)][monthToIndexMap.get(month)] != null) {
-                            System.out.println(dataBase[yearToIndexMap.get(year)][monthToIndexMap.get(month)].toString());
-                        } else {
-                            System.out.println("There is no entry in here\n----------------------------");
-                        }
-                    }
-                }
-            } else if (opc == 2) {
-                for (int i = 4; i >= 0; i--) {
-                    for (int j = 11; j >= 0; j--) {
-                        if (dataBase[yearToIndexMap.get(year)][monthToIndexMap.get(month)] != null) {
-                            System.out.println(dataBase[yearToIndexMap.get(year)][monthToIndexMap.get(month)].toString());
-                        } else {
-                            System.out.println("There is no entry in here\n----------------------------");
-                        }
-                    }
-                }
+
+            if (dataBase[yearToIndexMap.get(year)][monthToIndexMap.get(month)] != null) {
+                System.out.println(dataBase[yearToIndexMap.get(year)][monthToIndexMap.get(month)].toString());
+            } else {
+                System.out.println("There is no entry in here\n----------------------------");
             }
+
         } catch (Exception e) {
             System.out.println("Error in 'printByYearAndMonth' method: " + e);
         }

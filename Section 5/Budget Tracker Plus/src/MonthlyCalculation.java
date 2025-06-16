@@ -144,9 +144,9 @@ public class MonthlyCalculation {
                 "Total expenses: " + totalExpenses + "\n" +
                 "Remaining budget: " + remainingBudget + "\n" +
                 "Rent percentage: " + rentPercentage + "\n" +
-                "Groceries percentage=" + groceriesPercentage + "\n" +
-                "Transportation percentage=" + transportationPercentage + "\n" +
-                "Entertainment percentage=" + entertainmentPercentage + "\n" +
+                "Groceries percentage: " + groceriesPercentage + "\n" +
+                "Transportation percentage: " + transportationPercentage + "\n" +
+                "Entertainment percentage: " + entertainmentPercentage + "\n" +
                 "----------------------------";
     }
 }

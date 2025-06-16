@@ -7,7 +7,7 @@ public class Main {
         BudgetTracker dataBase = new BudgetTracker();
 
         do {
-            System.out.println("Bienvenido al Budget Tracker Plus");
+            System.out.println("Welcome to the Budget Tracker Plus");
             System.out.println("1. Add a new entry");
             System.out.println("2. Update an existing entry");
             System.out.println("3. Print entries of a specified year");
@@ -80,22 +80,11 @@ public class Main {
                 case 5:
                     int yearPrintByYearAndMonth = 0;
                     int monthPrintByYearAndMonth = 0;
-                    int opcPrintByYearAndMonth = 0;
-                    do {
-                        System.out.println("In which format would you like to print entries by year and month?");
-                        System.out.println("1. Normal");
-                        System.out.println("2. Inverted");
-                        System.out.println("3. Return to the main menu");
-                        System.out.print("Enter the option: ");
-                        opcPrintByYearAndMonth = sc.nextInt();
-                        if (opcPrintByYearAndMonth != 3) {
-                            System.out.print("Enter the year of the entries: ");
-                            yearPrintByYearAndMonth = sc.nextInt();
-                            System.out.print("Enter the month of the entries: ");
-                            monthPrintByYearAndMonth = sc.nextInt();
-                            dataBase.printByYearAndMonth(yearPrintByYearAndMonth, monthPrintByYearAndMonth, opcPrintByYearAndMonth);
-                        }
-                    } while (opcPrintByYearAndMonth != 3);
+                    System.out.print("Enter the year of the entries: ");
+                    yearPrintByYearAndMonth = sc.nextInt();
+                    System.out.print("Enter the month of the entries: ");
+                    monthPrintByYearAndMonth = sc.nextInt();
+                    dataBase.printByYearAndMonth(yearPrintByYearAndMonth, monthPrintByYearAndMonth);
                     break;
                 case 6:
                     int opcPrintAll = 0;
