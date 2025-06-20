@@ -117,5 +117,5 @@ public enum Dificultad {
 ---
 
 Veo un gran potencial para desarrollar una especie de creador de quizzes dinámico y sencillo que se pueda ejecutar de manera local, tanto en la computadora como en el celular. 
-Esto permitiría a cualquier usuario generar sus propias trivias personalizadas con facilidad, ampliando significativamente la utilidad y la interactividad de la base de este juego. (●'◡'●) (quizás enn un futuro lo haga)
+Esto permitiría a cualquier usuario generar sus propias trivias personalizadas con facilidad, ampliando significativamente la utilidad y la interactividad de la base de este juego. (●'◡'●) (quizás en un futuro lo haga)
 
