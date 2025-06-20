@@ -1,0 +1,285 @@
+[
+  {
+    "enunciado": "¿Qué significa JVM en Java?",
+    "opciones": {
+      "1": "Java Very Much",
+      "2": "Java Virtual Machine",
+      "3": "Java Value Method",
+      "4": "Just Verify Memory"
+    },
+    "respuestaCorrecta": 2,
+    "categoria": "PROGRAMACION",
+    "dificultad": "FACIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Qué estructura de datos sigue el principio FIFO?",
+    "opciones": {
+      "1": "Stack",
+      "2": "Queue",
+      "3": "List",
+      "4": "Tree"
+    },
+    "respuestaCorrecta": 2,
+    "categoria": "PROGRAMACION",
+    "dificultad": "FACIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Qué librería en Java se usa para manejar JSON?",
+    "opciones": {
+      "1": "JDBC",
+      "2": "Jackson",
+      "3": "Swing",
+      "4": "JUnit"
+    },
+    "respuestaCorrecta": 2,
+    "categoria": "PROGRAMACION",
+    "dificultad": "NORMAL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Cuál es el principio de OOP que permite una clase heredar de otra?",
+    "opciones": {
+      "1": "Encapsulamiento",
+      "2": "Abstracción",
+      "3": "Herencia",
+      "4": "Polimorfismo"
+    },
+    "respuestaCorrecta": 3,
+    "categoria": "PROGRAMACION",
+    "dificultad": "NORMAL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Qué palabra clave se usa para evitar que una clase sea heredada?",
+    "opciones": {
+      "1": "final",
+      "2": "static",
+      "3": "private",
+      "4": "abstract"
+    },
+    "respuestaCorrecta": 1,
+    "categoria": "PROGRAMACION",
+    "dificultad": "DIFICIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+
+  {
+    "enunciado": "¿Quién dijo 'pienso, luego existo'?",
+    "opciones": {
+      "1": "Platón",
+      "2": "Aristóteles",
+      "3": "René Descartes",
+      "4": "Nietzsche"
+    },
+    "respuestaCorrecta": 3,
+    "categoria": "FILOSOFIA",
+    "dificultad": "FACIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Cuál es el fin último en la ética aristotélica?",
+    "opciones": {
+      "1": "El deber",
+      "2": "El placer",
+      "3": "La felicidad (eudaimonía)",
+      "4": "La igualdad"
+    },
+    "respuestaCorrecta": 3,
+    "categoria": "FILOSOFIA",
+    "dificultad": "FACIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Qué es el 'mito de la caverna' según Platón?",
+    "opciones": {
+      "1": "Una historia religiosa",
+      "2": "Una crítica a la política",
+      "3": "Una metáfora del conocimiento",
+      "4": "Una leyenda griega"
+    },
+    "respuestaCorrecta": 3,
+    "categoria": "FILOSOFIA",
+    "dificultad": "NORMAL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Cuál es el concepto central del existencialismo?",
+    "opciones": {
+      "1": "La razón pura",
+      "2": "La existencia precede a la esencia",
+      "3": "El idealismo absoluto",
+      "4": "La dialéctica materialista"
+    },
+    "respuestaCorrecta": 2,
+    "categoria": "FILOSOFIA",
+    "dificultad": "NORMAL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Qué filósofo propuso el 'eterno retorno'?",
+    "opciones": {
+      "1": "Kant",
+      "2": "Nietzsche",
+      "3": "Sócrates",
+      "4": "Hegel"
+    },
+    "respuestaCorrecta": 2,
+    "categoria": "FILOSOFIA",
+    "dificultad": "DIFICIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+
+  {
+    "enunciado": "¿Qué pieza solo se mueve en forma de L en ajedrez?",
+    "opciones": {
+      "1": "Peón",
+      "2": "Alfil",
+      "3": "Caballo",
+      "4": "Torre"
+    },
+    "respuestaCorrecta": 3,
+    "categoria": "AJEDREZ",
+    "dificultad": "FACIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Qué es un jaque mate?",
+    "opciones": {
+      "1": "Cuando se captura al rey",
+      "2": "Cuando el rey está amenazado y no puede escapar",
+      "3": "Cuando hay empate",
+      "4": "Cuando se coronan todos los peones"
+    },
+    "respuestaCorrecta": 2,
+    "categoria": "AJEDREZ",
+    "dificultad": "FACIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Cuál es la única pieza que puede saltar otras piezas?",
+    "opciones": {
+      "1": "Rey",
+      "2": "Dama",
+      "3": "Caballo",
+      "4": "Torre"
+    },
+    "respuestaCorrecta": 3,
+    "categoria": "AJEDREZ",
+    "dificultad": "FACIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Qué es el enroque?",
+    "opciones": {
+      "1": "Un movimiento de torre y alfil",
+      "2": "Un movimiento para proteger al rey",
+      "3": "Un jaque doble",
+      "4": "Una coronación"
+    },
+    "respuestaCorrecta": 2,
+    "categoria": "AJEDREZ",
+    "dificultad": "NORMAL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Qué apertura comienza con 1.e4 c5?",
+    "opciones": {
+      "1": "Apertura Española",
+      "2": "Defensa Siciliana",
+      "3": "Defensa Francesa",
+      "4": "Gambito de dama"
+    },
+    "respuestaCorrecta": 2,
+    "categoria": "AJEDREZ",
+    "dificultad": "DIFICIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+
+  {
+    "enunciado": "¿Cómo se llama el protagonista de Lies of P?",
+    "opciones": {
+      "1": "Pinocchio",
+      "2": "Geppetto",
+      "3": "Simon",
+      "4": "Eugénie"
+    },
+    "respuestaCorrecta": 1,
+    "categoria": "LIES_OF_P",
+    "dificultad": "FACIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Qué arma permite ataques eléctricos en Lies of P?",
+    "opciones": {
+      "1": "Electric Coil Stick",
+      "2": "Flaming Sword",
+      "3": "Venom Rapier",
+      "4": "Greatsword of Fate"
+    },
+    "respuestaCorrecta": 1,
+    "categoria": "LIES_OF_P",
+    "dificultad": "NORMAL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Qué NPC te mejora el brazo de legión?",
+    "opciones": {
+      "1": "Sophia",
+      "2": "Venigni",
+      "3": "Antonia",
+      "4": "Pulcinella"
+    },
+    "respuestaCorrecta": 4,
+    "categoria": "LIES_OF_P",
+    "dificultad": "NORMAL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Cuál es el dilema principal que enfrenta el jugador?",
+    "opciones": {
+      "1": "Salvar o destruir Krat",
+      "2": "Mentir o decir la verdad",
+      "3": "Aliarse con Geppetto o rebelarse",
+      "4": "Elegir entre armas o marionetas"
+    },
+    "respuestaCorrecta": 2,
+    "categoria": "LIES_OF_P",
+    "dificultad": "DIFICIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  },
+  {
+    "enunciado": "¿Qué representa el medidor de corrupción?",
+    "opciones": {
+      "1": "Estado de salud mental",
+      "2": "Cantidad de mentiras acumuladas",
+      "3": "Transformación en marioneta",
+      "4": "Relación con Geppetto"
+    },
+    "respuestaCorrecta": 3,
+    "categoria": "LIES_OF_P",
+    "dificultad": "DIFICIL",
+    "haSidoRespondida": "false",
+    "haSidoRespondidaCorrectamente": 0
+  }
+]
